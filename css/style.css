@@ -545,9 +545,7 @@ margin-bottom: 16px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: 
-  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),  
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -572,7 +570,8 @@ box-shadow:
   0 2px 1px 0 rgba(0, 0, 0, 0.2);
 background: #fcfcfc;
 transform: translate(-50%, -50%);
-transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1),  background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+padding: 72px 24px 24px 24px; 
 }
 
 .backdrop:not(.is-open) .modal{
@@ -591,12 +590,18 @@ transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1),  background-color 250
   fill: #e7e9fc;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-  border: 1px solid #e7e9fc;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon{
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover,
@@ -604,6 +609,7 @@ transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1),  background-color 250
   border-radius: 100%;
   background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
 }
 
 .close-button:hover .close-icon,
@@ -621,12 +627,28 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 margin-top: 72px;
+margin-bottom: 16px;
+}
+.name-wrap{
+  margin-bottom: 8px; 
 }
 
 
 .input-icon{
   fill: #2e2f42;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-input-wrap:hover .input-icon,
+.modal-input-wrap:focus .input-icon
+{
+  fill: #4D5AE5;
+}
+
 
 .modal-input:hover,
 .modal-input:focus{
@@ -637,12 +659,18 @@ margin-top: 72px;
 .modal-input{
   padding-left: 38px;
   width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4); 
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
-.modal-input-wrap:hover .input-icon,
-.modal-input-wrap:focus .input-icon
-{
-  fill: #4d5ae5;
+.modal-input-wrap{
+  position: relative;
+
 }
+
 
 
 .modal-button{
@@ -665,6 +693,9 @@ font-size: 12px;
 line-height: 1.16667;
 letter-spacing: 0.04em;
 color: #8e8f99;
+line-height: 1.17;
+display: block;
+margin-bottom: 4px;
 }
 
 .modal-ta{
@@ -673,11 +704,29 @@ color: #8e8f99;
   width: 100%;
   height: 120px;
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-ta::placeholder{
 font-weight: 400;
 font-size: 12px;
 line-height: 1.16667;
 letter-spacing: 0.04em;
 color: rgba(46, 47, 66, 0.4);
+}
+.modal-ta:focus,
+.modal-ta:hover{
+  border-color: #4D5AE5;
+}
+.checkbox-qw{
+  margin-bottom: 24px;
 }
