@@ -850,4 +850,18 @@ color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+padding: 8px 24px;
+width: 165px;
+height: 40px;
+background: #4d5ae5;
+border-color: transparent;
+color: #ffffff;
+cursor: pointer;
+}
+.send-svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
 }
