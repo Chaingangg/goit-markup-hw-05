@@ -855,9 +855,13 @@ padding: 8px 24px;
 width: 165px;
 height: 40px;
 background: #4d5ae5;
-border-color: transparent;
 color: #ffffff;
 cursor: pointer;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+border: none;
+
 }
 .send-svg{
   display: flex;
