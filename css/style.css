@@ -820,13 +820,34 @@ color: rgba(46, 47, 66, 0.4);
   color: #ffffff;
   margin-left: 80px;
   margin-right: 24px;
+  
 }
 
 .footer-sub-input{
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border: 1px solid #fff;
+border: 1px solid #ffffff;
 border-radius: 4px;
 width: 264px;
 height: 40px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 background-color: transparent ;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+padding-left: 16px;
+color: #ffffff;
+}
+.footer-sub-input::placeholder{
+  color: #ffffff;
+}
+.footer-form{
+  display: flex;
+  gap: 24px;
+}
+/* FOOTER BUTTON */
+.sub-button{
+  min-width: 165px;
+  height: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
