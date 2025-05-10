@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title> 
 
-    <!-- ( Raleway та Roboto) -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,14 +30,23 @@
           <li class="address-item"><a href="tel:+110001111111" class="address-qwe">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      <button class="burger-button" type="button" data-menu-open>
+        <svg class="burger-icon" width="24" height="24">
+        <use href="images/icons.svg#icon-burger2"></use>
+      </svg></button>
     </div>
-
-
-
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close" data-menu-close>close</button>
+        <nav class="qwer">Studio</nav>
+        <address>Portfolio</address>
+        <div>Contacts</div>
+      </div>
+    </div>
     </header>
+<script src="./js/menu.js"></script>
 
-
-    <main>
+    <!-- <main>
       <section class="section-one">
         <div class="container">
         <h1 class="main-title">Effective Solutions for Your Business</h1>
@@ -380,7 +389,6 @@
 
   <div class="backdrop" data-modal>
     <div class="modal">
-      <!-- is-open -->
 
       <button class="close-button" type="button" data-modal-close>
         <svg class="close-icon" width="8" height="8" >
@@ -443,6 +451,6 @@
 
     </div>
   </div>
-  <script src="./js/modal.js"></script>
+  <script src="./js/modal.js"></script> -->
 </body>
 </html>
